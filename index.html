@@ -81,20 +81,20 @@
     <button onclick="kirimPesan()">Pesan via WhatsApp</button>
   </div>
 
-  <script>
-    function kirimPesan() {
-      const username = document.getElementById("username").value;
-      const jumlah = document.getElementById("jumlah").value;
-      const noPembeli = document.getElementById("whatsapp").value;
+<script>
+  function kirimPesan() {
+    const username = document.getElementById("username")?.value || "-";
+    const jumlah = document.getElementById("jumlah")?.value || "-";
+    const linkgamepass = document.getElementById("whatsapp")?.value || "-";
 
-      const pesan = `Halo admin, saya ingin membeli ${jumlah} Robux.%0AUsername Roblox: ${username}%0linkgamepass: ${linkgamepass saya}`;
-      
-      // Ganti nomor berikut dengan nomor WhatsApp kamu (pakai kode negara, misalnya 62 untuk Indonesia)
-      const noAdmin = "6285697243087"; 
+    const pesan = `Halo admin, saya ingin membeli ${jumlah} Robux.%0AUsername Roblox: ${username}%0ALink Gamepass: ${linkgamepass}`;
+    const noAdmin = "6285697243087"; // ✅ Sudah sesuai nomor kamu
 
-      const url = `https://wa.me/${noAdmin}?text=${pesan}`;
-      window.open(url, "_blank");
-    }
+    const url = `https://wa.me/${noAdmin}?text=${pesan}`;
+    window.open(url, "_blank");
+  }
+</script>
+    
   </script>
 </body>
 </html>

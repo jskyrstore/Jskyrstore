@@ -76,7 +76,7 @@
     </select>
 
     <label for="whatsapp">Link gamepass:</label>
-    <input type="text" id="whatsapp" placeholder="Contoh: 08123456789" required />
+    <input type="text" id="whatsapp" placeholder= required />
 
     <button onclick="kirimPesan()">Pesan via WhatsApp</button>
   </div>
@@ -87,7 +87,7 @@
       const jumlah = document.getElementById("jumlah").value;
       const noPembeli = document.getElementById("whatsapp").value;
 
-      const pesan = `Halo admin, saya ingin membeli ${jumlah} Robux.%0AUsername Roblox: ${username}%0ANomor saya: ${noPembeli}`;
+      const pesan = `Halo admin, saya ingin membeli ${jumlah} Robux.%0AUsername Roblox: ${username}%0linkgamepass: ${linkgamepass saya}`;
       
       // Ganti nomor berikut dengan nomor WhatsApp kamu (pakai kode negara, misalnya 62 untuk Indonesia)
       const noAdmin = "6285697243087"; 
